@@ -9,3 +9,7 @@ The code is heavily based on this gist, referenced from the prior url: https://g
 1. Change the constants in config.go to match your project.
 1. If necessary, run `setup.sh` to create a dummy table.
 1. Run `run.sh` to do a single test.  I find that (ballbark) ~1 out of 5 attempts will successfully demonstrate the bug, which is indicated by a runtime of several minutes (as opposed to ~10 seconds in a normal run).
+
+## Dependencies
+
+The latest (as of July 7, 2016) version of all Go dependencies are checked into the repo, but it is easy to try with the latest and greatest if something new gets checked in.  Just `rm -rf src` and then `go get google.golang.org/cloud/bigtable`.
